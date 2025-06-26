@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Your_name 
+
+~~~
+{}{img_left}{image.png}{150}{250}{250}{}
+Your_name \n
+Title \n
+[www.google.com University]
+~~~
+
+== Contact
+Office XXX \n
+Phone XXX   \n
+Email XXX   \n
+
+
+== Summary of my research
+XXXXX
+
+== Recruiting
+XXXXXX
+
+== Research experience & Education
+- *B.S in Major* (yyyy.m) \n XXXXX
+- *M.S in Major* (yyyy.m) \n XXXXX
+- *Ph.D in Major* (yyyy.m) \n XXXXX
