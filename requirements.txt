@@ -1,0 +1,14 @@
+# Python requirements for jemdoc academic profile template
+
+# Core dependencies
+python>=3.6
+
+# Jemdoc requirements
+beautifulsoup4>=4.9.0
+
+# Optional dependencies for math support
+# mathjax>=2.7.0
+
+# Development tools
+# pytest>=6.0.0
+# pylint>=2.6.0
