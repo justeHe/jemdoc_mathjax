@@ -1,0 +1,47 @@
+# jemdoc: menu{MENU}{Advanced_Features.html}, title{Advanced Features}, showsource
+= Advanced Features
+
+Jemdoc offers several advanced features for more complex layouts and content management.
+
+== Advanced Blocks (`img_left`)
+Creates a block with an image on the left and text on the right.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+\~~~
+{}{img_left}{image_url}{alt_text}{width}{height}{link_url}
+This is the description text that will appear to the right of the image.
+Line breaks are preserved.
+\~~~
+~~~
+- *Display*:
+~~~
+{}{img_left}{/docs/image.png}{My Photo}{120px}{}{}
+This is the description text that will appear to the right of the image.
+Line breaks are preserved.
+~~~
+
+== File Inclusion
+- *include{...}*: Includes and parses another `.jemdoc` file.
+  - *Syntax*: \include{shared/header.jemdoc}\
+- *includeraw{...}*: Includes a file as raw text without parsing.
+  - *Syntax*: \includeraw{data.txt}\
+
+== Footer Customization
+Control the footer display using page metadata.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+# jemdoc: nofooter       // Hides the footer entirely
+# jemdoc: nodate          // Hides the generation date
+# jemdoc: showsourcelink  // Adds a link to the .jemdoc source file
+~~~
+
+== Environment Variables
+Reference operating system environment variables in your document.
+
+- *Jemdoc Syntax*: \!\$VAR_NAME\$\!\
+- *Example*: My home directory is: \!\$HOME\$\!
+- *Display*: My home directory is: !$HOME$!

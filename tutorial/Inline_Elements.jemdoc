@@ -1,0 +1,48 @@
+# jemdoc: menu{MENU}{Inline_Elements.html}, title{Inline-Level Elements}, showsource
+= Inline-Level Elements
+
+Inline elements format text within block-level elements.
+
+== Text Formatting
+- *Bold*: \*text\* -> *text*
+- *Italic*: \/text\/ -> /text/
+- *Underline*: \_text\_ -> _text_
+- *Monospace*: \+text\+ -> +text+
+- *Quotes*: \"text\" -> "text"
+
+== Links
+- *External Link*: \[http://jemdoc.jaboc.net Jemdoc website]\ -> [http://jemdoc.jaboc.net Jemdoc website]
+- *Internal Link*: \[/index.html Home]\ -> [/index.html Home]
+- *Email Link*: \[name@example.com]\ -> [name@example.com]
+
+== Images
+- *Jemdoc Syntax*: \[img{width}{height}{alt\_text} image_url]\
+- *Example*: \[img{100px}{}{Logo} /docs/image.png]\
+- *Display*: [img{100px}{}{Logo} /docs/image.png]
+
+== MathJax Formulas
+- *Inline*: \$E=mc^2\$ -> $E=mc^2$
+- *Block*: 
+
+~~~
+{Syntax}{}
+\( 
+    \sum_{i=1}^n i = \frac{n(n+1)}{2} 
+\) 
+~~~
+
+\( \sum_{i=1}^n i = \frac{n(n+1)}{2} \)
+
+== Special Characters
+- \---\ (em-dash) -> ---
+- \--\ (en-dash) -> --
+- \...\ (ellipsis) -> ...
+- \~\ (non-breaking space) -> ~
+- \\R\ (Registered) -> \R
+- \\C\ (Copyright) -> \C
+- \\M\ (Middle dot) -> \M
+- \\n\ (Line break) -> first line \n second line
+
+== Raw HTML
+- *Jemdoc Syntax*: \{\{<div style="color:red;">Raw HTML in red.</div>\}\}
+- *Display*: {{<div style="color:red;">Raw HTML in red.</div>}}

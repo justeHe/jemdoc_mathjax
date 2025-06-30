@@ -1,0 +1,13 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Jemdoc Tutorial
+
+Welcome to the Jemdoc tutorial! This website provides a hands-on guide to the Jemdoc syntax, with each page demonstrating a specific set of features.
+
+== Navigation
+- *Page Configuration*: Learn how to set up page titles, menus, and custom styles.
+- *Block Elements*: Understand headings, paragraphs, lists, and different types of blocks.
+- *Inline Elements*: Explore text formatting, links, images, and mathematical formulas.
+- *Tables*: See how to create and structure tables.
+- *Advanced Features*: Discover advanced functionalities like image-text alignment, file inclusion, and more.
+
+Use the menu on the left to navigate through the different sections.

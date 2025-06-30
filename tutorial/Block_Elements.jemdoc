@@ -1,0 +1,108 @@
+# jemdoc: menu{MENU}{Block_Elements.html}, title{Block-Level Elements}, showsource
+= Block-Level Elements
+
+Block-level elements define the main structure of your page.
+
+== Headings
+Use one or more `=` at the beginning of a line to define headings.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+= Heading 1 (H1)
+== Heading 2 (H2)
+=== Heading 3 (H3)
+~~~
+- *Display*:
+= Heading 1 (H1)
+== Heading 2 (H2)
+=== Heading 3 (H3)
+
+== Paragraphs
+Consecutive lines of text form a paragraph. Separate paragraphs with one or more blank lines.
+
+- *Jemdoc Syntax*:
+~~~{}{}
+This is the first paragraph.
+It can be written on multiple lines.
+
+This is the second paragraph.
+~~~
+- *Display*:
+This is the first paragraph.
+It can be written on multiple lines.
+
+This is the second paragraph.
+
+== Lists
+
+=== Unordered Lists
+Use `-` to create list items. Indent with more `-` for nested lists.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+- Item A
+- Item B
+  -- Nested Item B.1
+~~~
+- *Display*:
+- Item A
+- Item B
+  -- Nested Item B.1
+
+=== Ordered Lists
+Use `.` to create ordered lists.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+. First item
+. Second item
+~~~
+- *Display*:
+. First item
+. Second item
+
+=== Definition Lists
+Use `:{Term} Definition`.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+:{Jemdoc} A lightweight markup language.
+~~~
+- *Display*:
+:{Jemdoc} A lightweight markup language.
+
+== Blocks
+Use `~~~` to create special formatted blocks.
+
+=== Info Block
+- *Jemdoc Syntax*:
+~~~
+{}{}
+\~~~ {Optional Title}
+This is the content of the block.
+\~~~
+~~~
+- *Display*:
+~~~ {Optional Title}
+This is the content of the block.
+~~~
+
+=== Code Block
+Supports syntax highlighting for various languages.
+
+- *Jemdoc Syntax*:
+~~~{}{}
+\~~~ {Python Example}{python}
+def greet(name):
+    print(f"Hello, {name}!")
+\~~~
+~~~
+- *Display*:
+~~~ {Python Example}{python}
+def greet(name):
+    print(f"Hello, {name}!")
+~~~

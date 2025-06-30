@@ -612,7 +612,7 @@ def replaceequations(b, f):
 
       if wl:
 #        b = b[:m.start()] + \
-#            '{{\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br /></div>}}' % (fullfn, eqtext) + b[m.end():]
+#            '{{}\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br /></div>}}' % (fullfn, eqtext) + b[m.end():]
         #b = b[:m.start()] + 'BACKSLASH65358OPENBRACKET65358\n' + eqtext + '\nBACKSLASH65358CLOSEBRACKET65358'+ b[m.end():]
         b = b[:m.start()] + 'BACKSLASH65358OPENBRACKET65358' + eqtext + 'BACKSLASH65358CLOSEBRACKET65358'+ b[m.end():]
         #b = b[:m.start()] + 'BACKSLASH(BACKSLASHbegin{equation}\n' + eqtext + '\nBACKSLASHend{equation}BACKSLASH)'+ b[m.end():]
@@ -1142,7 +1142,7 @@ def colonlist(f):
   out(f.outf, '</dl>\n')
 
 def codeblock(f, g):
-  if g[1] == 'raw':
+  if g[1] == 'raw' or g[1] == 'text':
     raw = True
     ext_prog = None
   elif g[0] == 'filter_through':

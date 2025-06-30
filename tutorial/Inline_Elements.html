@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Inline-Level Elements</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Tutorial</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="Page_Configuration.html">Page_Configuration</a></div>
+<div class="menu-item"><a href="Block_Elements.html">Block_Elements</a></div>
+<div class="menu-item"><a href="Inline_Elements.html" class="current">Inline_Elements</a></div>
+<div class="menu-item"><a href="Tables.html">Tables</a></div>
+<div class="menu-item"><a href="Advanced_Features.html">Advanced_Features</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Inline-Level Elements</h1>
+</div>
+<p>Inline elements format text within block-level elements.
+</p>
+<h2>Text Formatting</h2>
+<ul>
+<li><p><b>Bold</b>: *text* -&gt; <b>text</b>
+</p>
+</li>
+<li><p><b>Italic</b>: /text/ -&gt; <i>text</i>
+</p>
+</li>
+<li><p><b>Underline</b>: _text_ -&gt; <u>text</u>
+</p>
+</li>
+<li><p><b>Monospace</b>: +text+ -&gt; <tt>text</tt>
+</p>
+</li>
+<li><p><b>Quotes</b>: "text" -&gt; &ldquo;text&rdquo;
+</p>
+</li>
+</ul>
+<h2>Links</h2>
+<ul>
+<li><p><b>External Link</b>: [http:<i></i>jemdoc.jaboc.net Jemdoc website] -&gt; <a href="http://jemdoc.jaboc.net" target=&ldquo;blank&rdquo;>Jemdoc website</a>
+</p>
+</li>
+<li><p><b>Internal Link</b>: [/index.html Home] -&gt; <a href="index.html">Home</a>
+</p>
+</li>
+<li><p><b>Email Link</b>: [name@example.com] -&gt; <a href="mailto:name@example.com" target=&ldquo;blank&rdquo;>name@example.com</a>
+</p>
+</li>
+</ul>
+<h2>Images</h2>
+<ul>
+<li><p><b>Jemdoc Syntax</b>: [img{width}{height}{alt_text} image_url]
+</p>
+</li>
+<li><p><b>Example</b>: [img{100px}{}{Logo} <i>docs</i>image.png]
+</p>
+</li>
+<li><p><b>Display</b>: <img src="/docs/image.png" width="100px" alt="Logo" />
+</p>
+</li>
+</ul>
+<h2>MathJax Formulas</h2>
+<ul>
+<li><p><b>Inline</b>: $E=mc^2$ -&gt; \(E=mc^2\)
+</p>
+</li>
+<li><p><b>Block</b>: 
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blocktitle">Syntax</div>
+<div class="blockcontent"><pre>
+\(
+    \sum_{i=1}^n i = \frac{n(n+1)}{2}
+\)
+</pre></div></div>
+<p style="text-align:center">
+\[ \sum_{i=1}^n i = \frac{n(n+1)}{2} \]
+</p><h2>Special Characters</h2>
+<ul>
+<li><p>-&ndash; (em-dash) -&gt; &#8201;&mdash;&#8201;
+</p>
+</li>
+<li><p>-- (en-dash) -&gt; &ndash;
+</p>
+</li>
+<li><p>... (ellipsis) -&gt; &hellip;
+</p>
+</li>
+<li><p>~ (non-breaking space) -&gt; &nbsp;
+</p>
+</li>
+<li><p>\R (Registered) -&gt; &reg;
+</p>
+</li>
+<li><p>\C (Copyright) -&gt; &copy;
+</p>
+</li>
+<li><p>\M (Middle dot) -&gt; &middot;
+</p>
+</li>
+<li><p>\n (Line break) -&gt; first line <br /> second line
+</p>
+</li>
+</ul>
+<h2>Raw HTML</h2>
+<ul>
+<li><p><b>Jemdoc Syntax</b>: {{&lt;div style=&ldquo;color:red;&rdquo;&gt;Raw HTML in red.&lt;/div&gt;}}
+</p>
+</li>
+<li><p><b>Display</b>: <div style="color:red;">Raw HTML in red.</div></p>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</body>
+</html>

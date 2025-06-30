@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Tables</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Tutorial</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="Page_Configuration.html">Page_Configuration</a></div>
+<div class="menu-item"><a href="Block_Elements.html">Block_Elements</a></div>
+<div class="menu-item"><a href="Inline_Elements.html">Inline_Elements</a></div>
+<div class="menu-item"><a href="Tables.html" class="current">Tables</a></div>
+<div class="menu-item"><a href="Advanced_Features.html">Advanced_Features</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Tables</h1>
+</div>
+<p>Jemdoc supports creating tables using a specific block syntax.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+~~~
+{}{table}{my-table}
+Header 1 | Header 2 | Header 3 ||
+Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 ||
+Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3
+~~~
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+</ul>
+<table id="my-table">
+<tr class="r1"><td class="c1">Header 1 </td><td class="c2"> Header 2 </td><td class="c3"> Header 3 </td></tr>
+<tr class="r2"><td class="c1">Row 1, Col 1 </td><td class="c2"> Row 1, Col 2 </td><td class="c3"> Row 1, Col 3 </td></tr>
+<tr class="r3"><td class="c1">Row 2, Col 1 </td><td class="c2"> Row 2, Col 2 </td><td class="c3"> Row 2, Col 3
+</td></tr></table>
+</td>
+</tr>
+</table>
+</body>
+</html>

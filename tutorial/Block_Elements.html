@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Block-Level Elements</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Tutorial</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="Page_Configuration.html">Page_Configuration</a></div>
+<div class="menu-item"><a href="Block_Elements.html" class="current">Block_Elements</a></div>
+<div class="menu-item"><a href="Inline_Elements.html">Inline_Elements</a></div>
+<div class="menu-item"><a href="Tables.html">Tables</a></div>
+<div class="menu-item"><a href="Advanced_Features.html">Advanced_Features</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Block-Level Elements</h1>
+</div>
+<p>Block-level elements define the main structure of your page.
+</p>
+<h2>Headings</h2>
+<p>Use one or more &lsquo;=&lsquo; at the beginning of a line to define headings.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+= Heading 1 (H1)
+== Heading 2 (H2)
+=== Heading 3 (H3)
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+</ul>
+<h1>Heading 1 (H1)</h1>
+<h2>Heading 2 (H2)</h2>
+<h3>Heading 3 (H3)</h3>
+<h2>Paragraphs</h2>
+<p>Consecutive lines of text form a paragraph. Separate paragraphs with one or more blank lines.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>This is the first paragraph.
+It can be written on multiple lines.
+</p>
+<p>This is the second paragraph.
+</p>
+</div></div>
+<p>This is the first paragraph.
+It can be written on multiple lines.
+</p>
+<p>This is the second paragraph.
+</p>
+<h2>Lists</h2>
+<h3>Unordered Lists</h3>
+<p>Use &lsquo;-&lsquo; to create list items. Indent with more &lsquo;-&lsquo; for nested lists.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+- Item A
+- Item B
+  -- Nested Item B.1
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+<li><p>Item A
+</p>
+</li>
+<li><p>Item B
+</p>
+<ul>
+<li><p>Nested Item B.1
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h3>Ordered Lists</h3>
+<p>Use &lsquo;.&lsquo; to create ordered lists.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+. First item
+. Second item
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+</ul>
+<ol>
+<li><p>First item
+</p>
+</li>
+<li><p>Second item
+</p>
+</li>
+</ol>
+<h3>Definition Lists</h3>
+<p>Use &lsquo;:{Term} Definition&lsquo;.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+:{Jemdoc} A lightweight markup language.
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+</ul>
+<dl>
+<dt>Jemdoc</dt>
+<dd><p>A lightweight markup language.
+</p></dd>
+</dl>
+<h2>Blocks</h2>
+<p>Use &lsquo;&nbsp;&nbsp;&nbsp;&lsquo; to create special formatted blocks.
+</p>
+<h3>Info Block</h3>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+~~~ {Optional Title}
+This is the content of the block.
+~~~
+</pre></div></div>
+<ul>
+<li><p><b>Display</b>:
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>This is the content of the block.
+</p>
+</div></div>
+<h3>Code Block</h3>
+<p>Supports syntax highlighting for various languages.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>~&nbsp;&nbsp; {Python Example}{python}
+def greet(name):
+print(f&ldquo;Hello, {name}!&rdquo;)
+~&nbsp;&nbsp;
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>def greet(name):
+print(f&ldquo;Hello, {name}!&rdquo;)
+</p>
+</div></div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Page Configuration</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Tutorial</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="Page_Configuration.html" class="current">Page_Configuration</a></div>
+<div class="menu-item"><a href="Block_Elements.html">Block_Elements</a></div>
+<div class="menu-item"><a href="Inline_Elements.html">Inline_Elements</a></div>
+<div class="menu-item"><a href="Tables.html">Tables</a></div>
+<div class="menu-item"><a href="Advanced_Features.html">Advanced_Features</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Page Configuration</h1>
+</div>
+<p>Jemdoc uses special comments at the top of the file (&lsquo;# jemdoc: &hellip;&lsquo;) for page-level configurations.
+</p>
+<h2>Page Title (&lsquo;title&lsquo;)</h2>
+<p>Sets the title displayed in the browser tab.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: title{Your Page Title}
+</pre></div></div>
+<ul>
+<li><p><b>Resulting HTML</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&lt;head&gt;
+  ...
+  &lt;title&gt;Your Page Title&lt;/title&gt;
+  ...
+&lt;/head&gt;
+</pre></div></div>
+<h2>Navigation Menu (&lsquo;menu&lsquo;)</h2>
+<p>Creates a sidebar navigation menu. Jemdoc automatically highlights the link to the current page.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: menu{menu_file.jemdoc}{current_page.html}
+</pre></div></div>
+<ul>
+<li><p><b>Resulting HTML</b>: This generates a &lsquo;div&lsquo; with &lsquo;id=&ldquo;layout-menu&rdquo;&lsquo;, and the current page's link will have &lsquo;class=&ldquo;current&rdquo;&lsquo;.
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&lt;!-- Assuming menu_file.jemdoc contains "Home [index.html]" --&gt;
+&lt;div class="menu-item"&gt;&lt;a href="index.html" class="current"&gt;Home&lt;/a&gt;&lt;/div&gt;
+</pre></div></div>
+<h2>Custom Styles and Scripts (&lsquo;addcss&lsquo;, &lsquo;addjs&lsquo;)</h2>
+<p>You can add custom CSS and JavaScript files.
+</p>
+<ul>
+<li><p><b>Jemdoc Syntax</b>:
+</p>
+</li>
+</ul>
+# jemdoc: addcss{custom.css}
+# jemdoc: addjs{custom.js}
+# jemdoc: nodefaultcss  // Prevents loading the default jemdoc.css
+<ul>
+<li><p><b>Resulting HTML</b>:
+</p>
+</li>
+</ul>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&lt;head&gt;
+  ...
+  &lt;link rel="stylesheet" href="custom.css" type="text/css" /&gt;
+  &lt;script src="custom.js" type="text/javascript"&gt;&lt;/script&gt;
+  ...
+&lt;/head&gt;
+</pre></div></div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+# jemdoc: menu{MENU}{Page_Configuration.html}, title{Page Configuration}, showsource
+= Page Configuration
+
+Jemdoc uses special comments at the top of the file (`\# jemdoc: ...`) for page-level configurations.
+
+== Page Title (`title`)
+Sets the title displayed in the browser tab.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+# jemdoc: title{Your Page Title}
+~~~
+
+- *Resulting HTML*:
+~~~
+{}{html}
+<head>
+  ...
+  <title>Your Page Title</title>
+  ...
+</head>
+~~~
+
+== Navigation Menu (`menu`)
+Creates a sidebar navigation menu. Jemdoc automatically highlights the link to the current page.
+
+- *Jemdoc Syntax*:
+~~~
+{}{}
+# jemdoc: menu{menu_file.jemdoc}{current_page.html}
+~~~
+- *Resulting HTML*: This generates a `div` with `id="layout-menu"`, and the current page's link will have `class="current"`.
+~~~
+{}{html}
+<!-- Assuming menu_file.jemdoc contains "Home [index.html]" -->
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+~~~
+
+== Custom Styles and Scripts (`addcss`, `addjs`)
+You can add custom CSS and JavaScript files.
+
+- *Jemdoc Syntax*:
+~~~
+{}{text}
+# jemdoc: addcss{custom.css}
+# jemdoc: addjs{custom.js}
+# jemdoc: nodefaultcss  // Prevents loading the default jemdoc.css
+~~~
+- *Resulting HTML*:
+~~~
+{}{html}
+<head>
+  ...
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+  <script src="custom.js" type="text/javascript"></script>
+  ...
+</head>
+~~~
